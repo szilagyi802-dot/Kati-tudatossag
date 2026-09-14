@@ -442,6 +442,6 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   .footer-note { text-align: left; }
 }
 .email-link {
-  display: inline-block;
-  margin-top: 20px;
+  display: block;
+  margin-top: 10px;
 }
