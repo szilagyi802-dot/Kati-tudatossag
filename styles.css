@@ -457,3 +457,65 @@ article p {
   color: var(--muted);
   margin-bottom: 24px;
 }
+.back-button:hover {
+  color: var(--terracotta-dark);
+  transform: translateX(-3px);
+}
+
+article header {
+  margin-bottom: 60px;
+}
+
+article h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 64px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  color: var(--green);
+  margin: 0;
+}
+
+article h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  color: var(--green);
+  margin: 65px 0 22px;
+}
+
+article h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--green);
+  border-left: 3px solid var(--terracotta);
+  padding-left: 20px;
+  margin: 55px 0 28px;
+}
+
+article section {
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  article {
+    padding-top: 30px;
+  }
+
+  article header {
+    margin-bottom: 40px;
+  }
+
+  article h2 {
+    margin-top: 50px;
+  }
+
+  article h3 {
+    font-size: 21px;
+    padding-left: 15px;
+  }
+}
