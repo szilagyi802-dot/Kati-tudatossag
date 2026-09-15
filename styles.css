@@ -280,6 +280,10 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .topic-omega { background: #e9dfcc; }
 .topic-gut { background: #d8e0d3; }
 .topic-lifestyle { background: #edd6ca; }
+  .topic-endometriosis {
+  background: #f3df8c;
+  border-color: #e6c85c;
+}
 .topic-icon {
   display: grid;
   place-items: center;
@@ -518,10 +522,6 @@ article section {
     font-size: 21px;
     padding-left: 15px;
   }
-}
-  .topic-endometriosis {
-  background: #f3df8c;
-  border-color: #e6c85c;
-}
+
 
 
