@@ -445,3 +445,15 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   display: block;
   margin-top: 10px;
 }
+
+article {
+      max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+article p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
