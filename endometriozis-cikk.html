@@ -1,216 +1,68 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Endometriózis: amikor a menstruáció nem „csak egy kicsit kellemetlen”</title>
-<meta name="description" content="Közérthető, tájékoztató cikk az endometriózisról: mi ez, milyen tünetei vannak, és miért hősök az endoval élő nők.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #F6F3FA;
-    --surface: #FFFFFF;
-    --ink: #2A1733;
-    --muted: #6B5A75;
-    --yellow: #F5C518;
-    --yellow-soft: #FFF4C7;
-    --line: #E3DCEA;
-    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-    --body: "Literata", Georgia, "Times New Roman", serif;
-    box-sizing: border-box;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #1A1020;
-      --surface: #241830;
-      --ink: #F1EAF5;
-      --muted: #B8A8C2;
-      --yellow: #F5C518;
-      --yellow-soft: #3A3014;
-      --line: #3A2C45;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #1A1020;
-    --surface: #241830;
-    --ink: #F1EAF5;
-    --muted: #B8A8C2;
-    --yellow: #F5C518;
-    --yellow-soft: #3A3014;
-    --line: #3A2C45;
-  }
-  *, *::before, *::after { box-sizing: inherit; }
-  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--body);
-    font-size: 1.125rem;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, svg { max-width: 100%; }
-
-  .article {
-    max-width: 42rem;
-    margin: 0 auto;
-    padding: 3.5rem 1.25rem 4rem;
-  }
-
-  /* Hero */
-  .hero { margin-bottom: 2.5rem; }
-  .ribbon { width: 3rem; height: auto; display: block; margin-bottom: 1.5rem; }
-  h1 {
-    font-family: var(--display);
-    font-weight: 800;
-    font-size: clamp(2.1rem, 6vw, 3.2rem);
-    line-height: 1.08;
-    letter-spacing: -0.02em;
-    margin: 0 0 1.25rem;
-  }
-  .lead {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    color: var(--ink);
-    margin: 0;
-  }
-
-  h2 {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin: 3rem 0 1rem;
-  }
-  p { margin: 0 0 1.1rem; }
-
-  .stat {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.35rem;
-    line-height: 1.35;
-    border-left: 6px solid var(--yellow);
-    padding: 0.25rem 0 0.25rem 1rem;
-    margin: 1.75rem 0;
-  }
-
-  /* Symptoms */
-  .symptoms {
-    list-style: none;
-    padding: 0;
-    margin: 1.25rem 0 0;
-    border-top: 1px solid var(--line);
-  }
-  .symptoms li {
-    padding: 0.85rem 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .symptoms strong {
-    font-family: var(--display);
-    font-weight: 700;
-  }
-
-  .callout {
-    background: var(--yellow-soft);
-    border-radius: 6px;
-    padding: 1.1rem 1.25rem;
-    margin: 1.5rem 0;
-    font-weight: 600;
-  }
-
-  /* Heroes section — the signature block */
-  .heroes {
-    background: var(--yellow);
-    color: #2A1733;
-    margin: 3.5rem -1.25rem;
-    padding: 2.5rem 1.25rem;
-  }
-  @media (min-width: 46rem) {
-    .heroes { margin-left: -3rem; margin-right: -3rem; padding: 3rem; border-radius: 4px; }
-  }
-  .heroes h2 {
-    font-size: clamp(2rem, 5.5vw, 2.8rem);
-    font-weight: 800;
-    line-height: 1.05;
-    margin-top: 0;
-  }
-  .heroes ul { padding-left: 1.2rem; margin: 1rem 0 1.5rem; }
-  .heroes li { margin-bottom: 0.5rem; }
-  .heroes li::marker { color: #2A1733; }
-  .heroes .closing {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.3rem;
-    line-height: 1.35;
-    margin: 0;
-  }
-
-  .disclaimer {
-    margin-top: 3rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.95rem;
-    font-style: italic;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kati | Tudatosabb mindennapok – Endometriózis: alapok, tünetek, és miért hősök az endoval élő nők.">
+  <title>Amikor a menstruáció nem „csak egy kicsit kellemetlen” | Kati</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<article class="article">
+  <article>
+    <a href="endometriozis.html" class="back-button">← Vissza az Endometriózis témához</a>
 
-  <header class="hero">
-    <svg class="ribbon" viewBox="0 0 48 64" aria-hidden="true">
-      <path d="M24 4c-7 0-12 5-12 12 0 6 4 11 8 17L8 58l8 2 8-15 8 15 8-2-12-25c4-6 8-11 8-17 0-7-5-12-12-12zm0 7c3 0 5 2 5 5 0 3-2 7-5 11-3-4-5-8-5-11 0-3 2-5 5-5z" fill="#F5C518"/>
-    </svg>
-    <h1>Endometriózis: amikor a menstruáció nem „csak egy kicsit kellemetlen”</h1>
-    <p class="lead">Képzeld el, hogy a méhed belsejét bélelő szövet úgy dönt, ideje világot látni. Elköltözik a petefészkekre, a hashártyára, néha a bélre vagy a hólyagra, és ott is minden hónapban ugyanazt csinálja, amit otthon: vérzik. Csak éppen onnan nincs hová távoznia.</p>
-  </header>
+    <header>
+      <p class="article-meta">Endometriózis · Alapok</p>
+      <h1>Amikor a menstruáció nem „csak egy kicsit kellemetlen”</h1>
+    </header>
 
-  <p>Ez az endometriózis: egy krónikus, gyulladással járó betegség.</p>
+    <p>Képzeld el, hogy a méhed belsejét bélelő szövet úgy dönt, ideje világot látni. Elköltözik a petefészkekre, a hashártyára, néha a bélre vagy a hólyagra, és ott is minden hónapban ugyanazt csinálja, amit otthon: vérzik. Csak éppen onnan nincs hová távoznia.</p>
 
-  <p class="stat">Nagyjából minden tizedik nőt érinti. Valószínűleg ismersz is valakit, csak lehet, hogy ő sem tudja még.</p>
+    <p>Ez az endometriózis: egy krónikus, gyulladással járó betegség.</p>
 
-  <h2>Mire figyelj?</h2>
-  <p>Az endo nem olvasta a tankönyvet, így mindenkinél kicsit másképp jelentkezik. A leggyakoribb jelek:</p>
-  <ul class="symptoms">
-    <li><strong>Erős, bénító menstruációs fájdalom</strong>, amin a „vegyél be egy fájdalomcsillapítót” tanács nem segít.</li>
-    <li><strong>Krónikus alhasi vagy deréktáji fájdalom</strong>, akár a menstruáción kívül is.</li>
-    <li><strong>Fájdalmas szex</strong>, különösen mélyebb behatolásnál.</li>
-    <li><strong>Fájdalmas székelés vagy vizelés</strong>, főleg a menstruáció idején.</li>
-    <li><strong>Erős vagy rendszertelen vérzés.</strong></li>
-    <li><strong>Az „endo-has”</strong>: olyan puffadás, hogy reggel még farmer, délután már csak melegítő jöhet szóba.</li>
-    <li><strong>Kimerültség</strong>, ami nem múlik el egy jó alvástól.</li>
-    <li><strong>Nehézségek a teherbeeséssel.</strong></li>
-  </ul>
+    <p class="highlight-text">Nagyjából minden tizedik nőt érinti. Valószínűleg ismersz is valakit, csak lehet, hogy ő sem tudja még.</p>
 
-  <h2>Miért nem tudunk róla többet?</h2>
-  <p>Mert évtizedekig ezt hallották a nők: „ez normális, minden nőnek fáj”. Nem, nem normális. Az átlagos diagnózisig 7–10 év is eltelhet, és ez idő alatt sokan azt hiszik, ők túlérzékenyek. A pontos diagnózishoz gyakran képalkotó vizsgálat, sok esetben laparoszkópia szükséges, ezért kell egy olyan nőgyógyász, aki komolyan veszi a panaszokat.</p>
-  <p class="callout">Ha a menstruációs fájdalom miatt rendszeresen kiesel a munkából, iskolából vagy az életből: menj orvoshoz, és ne hagyd, hogy lerázzanak.</p>
+    <section>
+      <h2>Mire figyelj?</h2>
+      <p>Az endo nem olvasta a tankönyvet, így mindenkinél kicsit másképp jelentkezik. A leggyakoribb jelek:</p>
+      <ul>
+        <li><strong>Erős, bénító menstruációs fájdalom</strong>, amin a „vegyél be egy fájdalomcsillapítót” tanács nem segít.</li>
+        <li><strong>Krónikus alhasi vagy deréktáji fájdalom</strong>, akár a menstruáción kívül is.</li>
+        <li><strong>Fájdalmas szex</strong>, különösen mélyebb behatolásnál.</li>
+        <li><strong>Fájdalmas székelés vagy vizelés</strong>, főleg a menstruáció idején.</li>
+        <li><strong>Erős vagy rendszertelen vérzés.</strong></li>
+        <li><strong>Az „endo-has”</strong>: olyan puffadás, hogy reggel még farmer, délután már csak melegítő jöhet szóba.</li>
+        <li><strong>Kimerültség</strong>, ami nem múlik el egy jó alvástól.</li>
+        <li><strong>Nehézségek a teherbeeséssel.</strong></li>
+      </ul>
+    </section>
 
-  <section class="heroes">
-    <h2>Az endoval élő nők hősök</h2>
-    <p>Nem túlzás. Egy endós nő:</p>
-    <ul>
-      <li>dolgozik, nevel, sportol, szervez, miközben belül mintha egy kisebb építkezés zajlana,</li>
-      <li>megtanult mosolyogni egy olyan fájdalom mellett, amitől más mentőt hívna,</li>
-      <li>évekig küzd egy diagnózisért, és közben elmagyarázza a világnak, hogy de, ez tényleg ennyire fáj,</li>
-      <li>profi szintre fejlesztette a hőtartó palack- és pizsamanadrág-menedzsmentet.</li>
-    </ul>
-    <p class="closing">Ők nem „kicsit nyafogósak”. Ők azok, akik minden hónapban lefutnak egy maratont, csak senki nem tapsol nekik a célban. Itt az ideje, hogy tapsoljunk.</p>
-  </section>
+    <section>
+      <h2>Miért nem tudunk róla többet?</h2>
+      <p>Mert évtizedekig ezt hallották a nők: „ez normális, minden nőnek fáj”. Nem, nem normális. Az átlagos diagnózisig 7–10 év is eltelhet, és ez idő alatt sokan azt hiszik, ők túlérzékenyek. A pontos diagnózishoz gyakran képalkotó vizsgálat, sok esetben laparoszkópia szükséges, ezért kell egy olyan nőgyógyász, aki komolyan veszi a panaszokat.</p>
+      <p class="highlight-text">Ha a menstruációs fájdalom miatt rendszeresen kiesel a munkából, iskolából vagy az életből: menj orvoshoz, és ne hagyd, hogy lerázzanak.</p>
+    </section>
 
-  <h2>Mit tehetsz te?</h2>
-  <p><strong>Ha érintett vagy:</strong> figyeld a tüneteidet, vezess naplót, és keress endometriózisban jártas szakorvost. A kezelés lehet gyógyszeres, hormonális vagy műtéti, és sokat segít egy jó támogató közösség is.</p>
-  <p><strong>Ha nem vagy érintett:</strong> hidd el annak, aki azt mondja, hogy fáj. Ez a legkevesebb, és sokszor a legtöbb.</p>
+    <section>
+      <h2>Az endoval élő nők hősök</h2>
+      <p>Nem túlzás. Egy endós nő:</p>
+      <ul>
+        <li>dolgozik, nevel, sportol, szervez, miközben belül mintha egy kisebb építkezés zajlana,</li>
+        <li>megtanult mosolyogni egy olyan fájdalom mellett, amitől más mentőt hívna,</li>
+        <li>évekig küzd egy diagnózisért, és közben elmagyarázza a világnak, hogy de, ez tényleg ennyire fáj,</li>
+        <li>profi szintre fejlesztette a hőtartó palack- és pizsamanadrág-menedzsmentet.</li>
+      </ul>
+      <h3>Ők nem „kicsit nyafogósak”. Ők azok, akik minden hónapban lefutnak egy maratont, csak senki nem tapsol nekik a célban. Itt az ideje, hogy tapsoljunk.</h3>
+    </section>
 
-  <p class="disclaimer">Ez a cikk tájékoztató jellegű, nem helyettesíti az orvosi vizsgálatot.</p>
+    <section>
+      <h2>Mit tehetsz te?</h2>
+      <p><strong>Ha érintett vagy:</strong> figyeld a tüneteidet, vezess naplót, és keress endometriózisban jártas szakorvost. A kezelés lehet gyógyszeres, hormonális vagy műtéti, és sokat segít egy jó támogató közösség is.</p>
+      <p><strong>Ha nem vagy érintett:</strong> hidd el annak, aki azt mondja, hogy fáj. Ez a legkevesebb, és sokszor a legtöbb.</p>
+    </section>
 
-</article>
+    <p><small>A cikk tájékoztató jellegű, nem minősül orvosi tanácsadásnak, és nem helyettesíti az orvosi vizsgálatot.</small></p>
+  </article>
 </body>
 </html>
